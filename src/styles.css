@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  min-height: 100vh;
+  background-color: rgb(253, 245, 246);
+}
+.searchBar {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.form {
+  background-color: pink;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.InputField {
+  width: 50%;
+  height: 40px;
+  border: 0;
+  outline: 0;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+.label {
+  font-size: 24px;
+  font-family: Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.label img{
+  width: 150px;
+  height: 100px;
+}
+.ImgList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 20px;
+}
+.ImgCard {
+  max-width: 32%;
+  max-height: 640px;
+  margin: 5px;
+}
+.Img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+.Img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 900px) {
+  .ImgCard {
+    max-width: 47%;
+    max-height: 400px;
+    margin: 5px;
+    border-radius: 50px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .container {
+    width: 95%;
+  }
+
+  .label {
+    font-size: 18px;
+    width: 40%;
+  }
+  .InputField {
+    width: 50%;
+  }
+  .Img:hover {
+    transform: scale(1.1);
+  }
+  .ImgList {
+    display: flex;
+    flex-direction: column;
+  }
+  .ImgCard {
+    max-width: 100%;
+  }
+}
