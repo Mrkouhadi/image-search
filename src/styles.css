@@ -74,6 +74,9 @@ code {
 }
 
 @media screen and (max-width: 900px) {
+  .container {
+    width: 95%;
+  }
   .ImgCard {
     max-width: 47%;
     max-height: 400px;
@@ -82,9 +85,6 @@ code {
   }
 }
 @media screen and (max-width: 570px) {
-  .container {
-    width: 95%;
-  }
 
   .label {
     font-size: 18px;
